@@ -1,0 +1,154 @@
+.form{
+  background: #F5F8FD;
+  position: relative;
+  margin-bottom: 100px;
+  &__body{
+    display:flex;
+    flex-direction:column;
+    // padding: 72px 0;
+  }
+  &__background{
+    position: relative;
+    img{
+      width: 100%;
+      max-width: 1000px;
+      max-height: 700px;
+      transform: translate(-147px, 0);
+    }
+  }
+  &__main{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  &__left{
+    width: 100%;
+    max-width: 504px;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 95%;
+    color: $colorWhite;
+    margin-bottom: 30px;
+    font-family: $fortArsenal;
+
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 23px;
+    color: $colorWhite;
+  }
+  &__fields-body{
+    display:flex;
+    flex-direction:column;
+    padding: 60px 40px;
+    align-items: center;
+    border-radius: 15px;
+    background: $colorWhite;
+    width: 100%;
+    max-width: 453px;
+  }
+  &__fields{
+    display:flex;
+    flex-direction:column;
+    row-gap: 12px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  &__field{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    border: 1px solid $colorBlue;
+    border-radius: 6px;
+    padding: 20px 24px;
+    resize: none;
+
+    &::placeholder{
+      color: rgba(30, 30, 30, 0.7);
+    }
+  }
+  textarea{
+    min-height: 163px;
+  }
+  &__button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 30px;
+    padding: 16px 0;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  &__policy{
+    font-size: 12px;
+    line-height: 15px;
+    color: #5F5F5F;
+    a{
+      color: #5F5F5F;
+      text-decoration: underline;
+      text-decoration-skip-ink:none;
+    }
+  }
+
+  @media (max-width: 1200px){
+    margin-bottom: 102px;
+    
+    &__title{
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 960px){
+    display: none;
+  }
+  @media (max-width: 640px){
+    display: block;
+    background: url("../img/form/background.png") 0 0/cover no-repeat;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    
+    &__container{
+      padding: 0;
+    }
+    &__body{
+      padding: 60px 10px;
+    }
+    &__background img{
+      transform: none;
+      display: none;
+    }
+    &__main{
+      flex-direction: column;
+      position: relative;
+      row-gap: 30px;
+    }
+    &__title{
+      font-size: 32px;
+      text-align: center;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
+    &__fields{
+      margin-bottom: 24px;
+    }
+    &__fields-body{
+      padding: 30px 20px;
+    }
+    &__field{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__policy{
+      text-align: center;
+    }
+  }
+}

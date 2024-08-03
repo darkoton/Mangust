@@ -1,0 +1,30 @@
+//< " ПОДКЛЮЧАЕМ ФАЙЛ С ШРИФТАМИ " >=============================================================================================================>//
+  @import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@700&family=Montserrat&family=Noto+Sans&family=Roboto&display=swap');
+
+// 01
+@font-face {
+  font-family: "Onest";
+  src: local('Onest Regular'), local('Onest-Regular'),
+      url('../fonts/OnestRegular1602-hint.woff') format('woff'),
+      url('../fonts/OnestRegular1602-hint.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: local('Onest Medium'), local('Onest-Medium'),
+      url('../fonts/OnestMedium1602-hint.woff') format('woff'),
+      url('../fonts/OnestMedium1602-hint.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: local('Onest Medium'), local('Onest-Medium'),
+      url('../fonts/OnestBold1602-hint.woff') format('woff'),
+      url('../fonts/OnestBold1602-hint.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

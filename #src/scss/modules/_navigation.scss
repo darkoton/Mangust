@@ -1,0 +1,136 @@
+.navigation{
+  margin-bottom: 20px;
+  background: #fff;
+  &__container{
+    max-width: 1317px;
+    padding: 0 60px;
+  }
+  &__body{
+    padding: 30px 0;
+    padding-top: 90px;
+  }
+  &__pc{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    font-family: $fortArsenal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 95%;
+    text-transform: uppercase;
+    color: $colorDark;
+  }
+  &__menu{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+  }
+  &__item{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $colorDark;
+    @media (any-hover:hover){
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    &:hover{
+      color: $colorPurple;
+    }
+    }
+  }
+
+  &__mob{
+    display: flex;
+    flex-direction: column;
+    display: none;
+  .navigation__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .navigation__burger{
+    display:flex;
+    flex-direction:column;
+    background: transparent;
+    row-gap: 3px;
+    padding: 7px 5px;
+    position: relative;
+    span{
+      display: inline-block;
+      width: 16px;
+      height: 2px;
+      background: $colorDark;
+      border-radius: 3px;
+      transition: all 0.3s ease 0s;
+
+      &.line-hidden{
+        position: absolute;
+        opacity: 0;
+        top: 40%; 
+      }
+    }
+
+    &.active{
+      span:not(.line-hidden){
+        opacity: 0;
+      }
+      span.line-hidden{
+        opacity: 1;
+      }
+      .lines .line-hidden:first-child{
+        transform: rotate(45deg);
+      }
+      .lines .line-hidden:last-child{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .navigation__menu{
+    border-bottom: 1px solid #000;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    row-gap: 10px;
+    transition: all 0.3s ease 0s;
+    max-height: 0px;
+    overflow: hidden;
+    &.active{
+      max-height: 100px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+  @media (max-width: 1090px){
+    &__body{
+      padding-top: 120px;
+    }
+  }
+  @media (max-width: 960px){
+    margin-bottom: 30px;
+    &__body{
+      padding-bottom: 0;
+    }
+    &__pc{
+      display: none;
+    }
+    &__mob{
+      display: flex;
+    }
+  }
+
+  @media (max-width: 640px){
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    &__container{
+      padding: 0 30px;
+    }
+    &__body{
+      padding-top: 25px;
+    }
+  }
+}

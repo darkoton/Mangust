@@ -1,0 +1,118 @@
+.stages{
+  position: relative;
+  margin-bottom: 120px;
+  &::before{
+    content: url('../img/stages/mangust.png');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &__body{
+    display: flex;
+    column-gap: 46px;
+    justify-content: space-between;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 95%;
+    font-family: $fortArsenal;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    counter-reset: my-counter;
+  }
+  &__stage{
+    display: flex;
+    border: 1px solid #DBDEE7;
+    border-radius: 15px;
+    padding: 36px 50px;
+    column-gap: 12px;
+    counter-increment: my-counter;
+    &-left{
+      &::before{
+        content: "/0" counter(my-counter) ;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 98%;
+        color: $colorPurple;
+      }
+    }
+    &-title{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 98%;
+      margin-bottom: 16px;
+    }
+    &-text{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  @media (max-width: 1200px){
+    &__body{
+      column-gap: 21px;
+    }
+    &__right{
+      max-width: 65%;
+    }
+    &__title{
+      width: 100%;
+      font-size: 40px;
+    }
+    &__stage{
+      &-title{
+        font-size: 20px;
+      }
+    }
+  } 
+
+  @media (max-width: 960px){
+    &::before{
+      display: none;
+    }
+    &__body{
+      flex-direction: column; 
+      row-gap: 40px;
+    }
+    &__right{
+      max-width: 100%;
+    }
+    &__stage{
+      &-text{
+        font-size: 16px;
+        line-height: 20px;
+      } 
+    }
+  }
+
+  @media (max-width: 640px){
+    &__container{
+      padding: 0;
+    }
+    &__body{
+      row-gap: 30px;
+    }
+    &__title{
+      padding: 0 30px;
+      font-size: 32px;
+    }
+    &__list{
+      row-gap: 20px;
+    }
+    &__stage{
+      padding: 30px;
+      &-title{
+        font-size: 18px;
+      }
+      &-text{
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}

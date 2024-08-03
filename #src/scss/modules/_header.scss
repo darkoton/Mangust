@@ -1,0 +1,55 @@
+//< " ФАЙЛ СТИЛЕЙ ХЕДЕРА " >=============================================================================================================>//
+
+.header{
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  background: rgba(50, 50, 50, 1);
+  &__container{
+    padding: 0 60px;
+  }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0;
+    column-gap: 10px;
+    .header__item{
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    a{
+      @media (any-hover:hover){
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover{
+          color: $colorPurple;
+        }
+      }
+    }
+  }
+  &__left, &__right{
+    display: flex;
+    column-gap: 30px;
+  }
+
+  @media (max-width: 1090px){
+    &__left, &__right{
+      flex-direction: column; 
+      row-gap: 4px;
+    }
+    &__right{
+        .header__phone{
+          align-self: end;
+        }
+    }
+  }
+  @media (max-width: 640px){
+    display: none;
+  }
+}
+
