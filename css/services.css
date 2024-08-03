@@ -1,0 +1,423 @@
+.main {
+  margin-bottom: 120px;
+}
+.main__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96%;
+  color: #111;
+  font-family: "Arsenal", sans-serif;
+  margin-bottom: 20px;
+}
+.main__text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  color: #111111;
+  margin-bottom: 32px;
+}
+.main__button {
+  padding: 12px 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 30px;
+}
+@media (max-width: 1200px) {
+  .main {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 960px) {
+  .main {
+    margin-bottom: 90px;
+  }
+  .main__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .main {
+    margin-bottom: 70px;
+  }
+  .main__title {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .main__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .main__button {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 0;
+    width: 100%;
+  }
+}
+
+.card {
+  margin-bottom: 30px;
+}
+.card__background-body {
+  padding: 1px;
+  background: linear-gradient(45deg, rgba(168, 38, 130, 0.9) 14.64%, #F0801A 85.36%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card__top {
+  background: linear-gradient(45deg, rgba(168, 38, 130, 0.9) 14.64%, #F0801A 85.36%);
+  padding: 30px 50px;
+}
+.card__bottom {
+  background: #fff;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+.card__bottom::after {
+  position: absolute;
+  bottom: 43px;
+  right: 60px;
+  z-index: 1;
+}
+.card.card-1 .card__bottom::after {
+  content: url("../img/services-cards/card-1.png");
+}
+.card.card-2 .card__bottom::after {
+  content: url("../img/services-cards/card-2.png");
+  bottom: 12px;
+  right: 60px;
+}
+.card.card-4 .card__bottom::after {
+  content: url("../img/services-cards/card-4.png");
+  bottom: 31px;
+  right: 57px;
+}
+.card.card-5 .card__bottom::after {
+  content: url("../img/services-cards/card-5.png");
+  bottom: 42px;
+  right: 70px;
+}
+.card.card-6 .card__bottom::after {
+  content: url("../img/services-cards/card-6.png");
+  bottom: 34px;
+  right: 92px;
+}
+.card.card-7 .card__bottom::after {
+  content: url("../img/services-cards/card-7.png");
+  bottom: 88px;
+  right: 79px;
+}
+.card.card-7 .card__text {
+  max-width: 603px;
+}
+.card.card-8 {
+  margin-bottom: 130px;
+}
+.card.card-8 .card__bottom::after {
+  content: url("../img/services-cards/card-8.png");
+  bottom: 69px;
+  right: 152px;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 95%;
+  color: #FFF9F3;
+  font-family: "Arsenal", sans-serif;
+  margin-bottom: 16px;
+  max-width: 603px;
+}
+.card__text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
+}
+.card__bottom {
+  padding: 50px;
+}
+.card__lists {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 2;
+}
+.card__lists-mob {
+  display: none;
+}
+.card__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  font-size: 18px;
+  line-height: 23px;
+}
+.card__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px 36px;
+  border-radius: 30px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+.card__button i {
+  display: inline-flex;
+}
+@media (any-hover: hover) {
+  .card__button {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .card__button:hover {
+    color: #323232;
+  }
+}
+@media (max-width: 1200px) {
+  .card__bottom::after {
+    right: 20px;
+  }
+  .card.card-2 .card__bottom::after {
+    content: url("../img/services-cards/card-2-1200.png");
+    bottom: 0px;
+    right: 0px;
+  }
+  .card.card-2 .card__bottom .card__lists {
+    margin-bottom: 100px;
+  }
+  .card.card-4 .card__bottom::after {
+    right: 0;
+  }
+  .card.card-5 .card__bottom::after {
+    right: -49px;
+    bottom: 20px;
+  }
+  .card.card-6 .card__bottom::after {
+    bottom: 24px;
+    right: 16px;
+  }
+  .card.card-7 .card__bottom::after {
+    bottom: 38px;
+    right: 23px;
+  }
+  .card.card-8 .card__bottom::after {
+    bottom: 9px;
+    right: 16px;
+  }
+}
+@media (max-width: 1030px) {
+  .card.card-2 .card__bottom::after {
+    bottom: 0px;
+    right: 0px;
+  }
+  .card.card-6 .card__bottom::after {
+    right: -40px;
+  }
+}
+@media (max-width: 960px) {
+  .card__top {
+    padding: 30px 40px;
+  }
+  .card__bottom {
+    padding: 40px 35px;
+  }
+  .card__bottom::after {
+    right: 0px;
+  }
+  .card.card-1 .card__bottom::after {
+    content: url("../img/services-cards/card-1-960.png");
+  }
+  .card.card-4 .card__bottom::after {
+    content: url("../img/services-cards/card-4-960.png");
+    bottom: 0;
+    right: -34px;
+  }
+  .card.card-5 .card__bottom::after {
+    content: url("../img/services-cards/card-5-960.png");
+    bottom: 17px;
+    right: -166px;
+  }
+  .card.card-6 .card__bottom::after {
+    content: url("../img/services-cards/card-6-960.png");
+    bottom: -10px;
+    right: -25px;
+  }
+  .card.card-7 .card__bottom::after {
+    content: url("../img/services-cards/card-7-960.png");
+    bottom: 17px;
+    right: -6px;
+  }
+  .card.card-8 .card__bottom::after {
+    content: url("../img/services-cards/card-8-960.png");
+    bottom: 10px;
+    right: 38px;
+  }
+  .card.card-8 .card__lists {
+    max-width: 359px;
+  }
+  .card__lists {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .card__item {
+    font-size: 16.5px;
+  }
+  .card__title {
+    font-size: 36px;
+  }
+  .card__text {
+    line-height: 20px;
+  }
+}
+@media (max-width: 880px) {
+  .card.card-1 .card__bottom::after {
+    right: -248px;
+    transform: scaleX(-1);
+  }
+}
+@media (max-width: 770px) {
+  .card.card-6 .card__bottom::after {
+    bottom: -24px;
+    right: -35px;
+  }
+}
+@media (max-width: 700px) {
+  .card.card-7 .card__bottom::after {
+    bottom: 0px;
+  }
+}
+@media (max-width: 690px) {
+  .card.card-5 .card__bottom::after {
+    right: -220px;
+  }
+  .card.card-8 .card__bottom::after {
+    right: 0;
+  }
+}
+@media (max-width: 640px) {
+  .card__lists {
+    display: none;
+    margin-bottom: 24px;
+    align-self: start;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  .card__lists-mob {
+    display: flex;
+  }
+  .card__container {
+    padding: 0;
+  }
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 40px;
+  }
+  .card__bottom::after {
+    bottom: 84px;
+  }
+  .card.card-2 .card__bottom::after {
+    content: url("../img/services-cards/card-2-640.png");
+    bottom: 59px;
+  }
+  .card.card-2 .card__bottom .card__lists {
+    margin-bottom: 112px;
+  }
+  .card.card-4 .card__bottom::after {
+    right: -53px;
+    bottom: 70px;
+  }
+  .card.card-4 .card__bottom .card__lists {
+    margin-bottom: 146px;
+  }
+  .card.card-5 .card__bottom::after {
+    bottom: 90px;
+    right: -239px;
+  }
+  .card.card-5 .card__list {
+    max-width: 120px;
+  }
+  .card.card-6 .card__bottom::after {
+    content: url("../img/services-cards/card-6-640.png");
+    bottom: 80px;
+    right: -60px;
+  }
+  .card.card-6 .card__bottom .card__lists {
+    margin-bottom: 104px;
+  }
+  .card.card-7 .card__bottom::after {
+    bottom: 109px;
+    right: 0;
+  }
+  .card.card-7 .card__bottom .card__lists {
+    margin-bottom: 64px;
+  }
+  .card.card-8 .card__bottom::after {
+    content: url("../img/services-cards/card-8-640.png");
+    bottom: 60px;
+  }
+  .card.card-8 .card__bottom .card__lists {
+    margin-bottom: 76px;
+  }
+  .card__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 98%;
+    margin-bottom: 8px;
+  }
+  .card__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .card__list {
+    row-gap: 8px;
+  }
+  .card__button {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+  .card__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .card.card-8 .card__lists {
+    max-width: 150px;
+  }
+}
+@media (max-width: 359px) {
+  .card__top {
+    padding: 20px;
+  }
+  .card__list {
+    max-width: 150px;
+  }
+  .card__bottom {
+    padding: 24px 20px;
+  }
+  .card.card-2 .card__bottom .card__lists {
+    margin-bottom: 120px;
+  }
+  .card.card-5 .card__bottom::after {
+    right: -270px;
+  }
+  .card.card-6 .card__bottom::after {
+    bottom: 70px;
+  }
+  .card.card-7 .card__bottom::after {
+    bottom: 100px;
+    right: -10px;
+  }
+}

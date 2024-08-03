@@ -1,0 +1,111 @@
+.portfolio__title {
+  margin-bottom: 70px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96%;
+  color: #111;
+  font-family: "Arsenal", sans-serif;
+}
+
+.portfolio__main {
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "box1 box2 box2""box1 box3 box4""box5 box5 box6""box7 box8 box6""box9 box10 box10""box9 box11 box12";
+}
+
+.portfolio__item {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.portfolio__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.portfolio__item:nth-child(1) {
+  grid-area: box1;
+}
+
+.portfolio__item:nth-child(2) {
+  grid-area: box2;
+}
+
+.portfolio__item:nth-child(3) {
+  grid-area: box3;
+}
+
+.portfolio__item:nth-child(4) {
+  grid-area: box4;
+}
+
+.portfolio__item:nth-child(5) {
+  grid-area: box5;
+}
+
+.portfolio__item:nth-child(6) {
+  grid-area: box6;
+}
+
+.portfolio__item:nth-child(7) {
+  grid-area: box7;
+}
+
+.portfolio__item:nth-child(8) {
+  grid-area: box8;
+}
+
+.portfolio__item:nth-child(9) {
+  grid-area: box9;
+}
+
+.portfolio__item:nth-child(10) {
+  grid-area: box10;
+}
+
+.portfolio__item:nth-child(11) {
+  grid-area: box11;
+}
+
+.portfolio__item:nth-child(12) {
+  grid-area: box12;
+}
+
+@media (max-width: 1200px) {
+  .portfolio__main {
+    gap: 20px;
+    grid-template-areas: "box1 box2 box2""box1 box3 box4""box5 box5 box6""box7 box8 box6""box10 box10 box9""box11 box12 box9";
+  }
+}
+
+@media (max-width: 960px) {
+  .portfolio__main {
+    grid-template-areas: "box2 box2 ""box1 box6 ""box5 box5 ""box9 box4 ""box10 box10 ""box7 box8""box11 box12";
+  }
+
+  .portfolio__item:nth-child(3) {
+    display: none;
+  }
+
+  .portfolio__item {
+    max-height: 300px;
+  }
+
+  .portfolio__item:nth-child(2), .portfolio__item:nth-child(5), .portfolio__item:nth-child(10) {
+    max-height: 359px;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio__main {
+    justify-content: center;
+    grid-template-areas: "box1""box6""box2""box5""box9""box4""box10""box7""box8""box11""box12";
+  }
+
+  .portfolio__item {
+    height: 300px;
+    width: 300px;
+  }
+}
